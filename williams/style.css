@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+
+}
+
+/* nav {
+    display: flex;
+    background-color: rgba(0, 163, 224, 1.00);
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+header {
+    z-index: 3;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1em;
+    margin: 1em;
+} */
+
+nav {
+    display: flex;
+    background-color: rgba(0, 163, 224, 1.00);
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+.next-race {
+    color: white;
+    background-image: linear-gradient(rgb(4, 30, 66), rgb(0, 98, 134) 100%);
+    gap: .01em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 52px;
+
+    box-shadow: 0px 3px 6px rgba(18, 19, 19, 0.20);
+
+    text-transform: uppercase;
+    font-size: .75em;
+}
+
+.next-race h3 {
+    margin: 1em;
+    font-style: italic;
+}
+
+#land {
+    background-color: rgba(0, 163, 224, 1.00);
+    margin: auto;
+    margin-right: 0;
+    height: 52px;
+    width: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: .75em;
+}
+
+.oneRoundToGO {
+    color: white;
+
+    height: 100%;
+    width: 1fr;
+    background-image: linear-gradient(90deg, rgba(4,30,66,0.97) 25%,rgba(0,0,0,0.00) 100%), url(https://cdn.williamsf1.tech/images/fnx611yr/production/061a4fd413cb48fba786d69f661845842820fdcd-2880x1212.jpg?w=1920&amp;auto=format);
+    background-position: center;
+    background-size: cover;
+
+
+
+    margin: 12px;
+    border-radius: 8px;
+}
+
+.fanText {
+    padding: 1em;
+}
+
+.fanText h1 {
+    font-size: 1.75em;
+    width: 7em;
+    text-transform: uppercase;
+}
