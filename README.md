@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Jitske Bos
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+ Rood
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Responsive
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.williamsf1.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Official Home of Williams Racing | Williams Racing
+  <img src="./images/Williams landingspagina.pdf" width="375px" alt="omschrijving de landingspagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="./images/race report.pdf" width="375px" alt="omschrijving van de tweede pagina">
  
 </details>
 
@@ -57,6 +57,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+    - De website heeft veel contrasterende kleuren.
+      - Witte tekst op donkere achtergrond
+      - Donkere tekst op witte achtergrond
+    - Veel links naar nieuwe pagina's zijn (grote) afbeeldingen
+    - De brillen die verschillende soorten blindheid nabootsten, maken het niet moeilijker om de website te bekijken
 
 </details>
 
