@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Williams F1 Jitske</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="headerBackground">
+            <div class="topPart">
+                <a id="logo" href="./index.html">
+                    <svg id="logo" width="38" height="38" viewBox="0 0 38 27" fill="none">
+                        <g clip-path="url(#b)">
+                            <path
+                                d="M27.048 11.608 31.474 0h6.533l-7.313 19.16-3.646-7.552Zm-16.081 0L6.532 0H0l7.303 19.16 3.664-7.552ZM19.584 0h-1.152L8.125 21.31 10.294 27h1.02l7.68-15.876L26.67 27h1.019l2.17-5.69L19.584 0Z"
+                                fill="#FDFDFE" tabIndex="-1"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="b">
+                                <path fill="#fff" d="M0 0h38v27H0z"></path>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <nav>
+                    <button class="mand">
+                        <svg id="mand" width="16" height="16" fill="none" viewBox="0 0 20 20">
+                            <path
+                                d="M14 4H12C12 1.79 10.21 0 8 0C5.79 0 4 1.79 4 4H2C0.9 4 0 4.9 0 6V18C0 19.1 0.9 20 2 20H14C15.1 20 16 19.1 16 18V6C16 4.9 15.1 4 14 4ZM8 2C9.1 2 10 2.9 10 4H6C6 2.9 6.9 2 8 2ZM14 18H2V6H4V8C4 8.55 4.45 9 5 9C5.55 9 6 8.55 6 8V6H10V8C10 8.55 10.45 9 11 9C11.55 9 12 8.55 12 8V6H14V18Z"
+                                fill="#FDFDFE"></path>
+                        </svg>
+                    </button>
+
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                </nav>
+            </div>
+
+            <div class="topHeader">
+                <section class="breadcrumbs">
+                    <a href="./index.html">Home</a>
+                    <svg width="20" height="20" viewBox="0 0 24 24" class="r-1ybube5">
+                        <polygon fill="#00A3E0" points="1.88 0 0 1.88 6.107 8 0 14.12 1.88 16 9.88 8"
+                            transform="translate(8.06 4)"></polygon>
+                    </svg>
+                    <a href="#">News</a>
+                </section>
+
+                <section class="kopjes">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path
+                            d="M16 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.1 0 16 0ZM11 14H4V12H11V14ZM14 10H4V8H14V10ZM14 6H4V4H14V6Z"
+                            fill="#00A3E0"></path>
+                    </svg>
+                    <h1>Report: P7 secured in Abu Dhabi</h1>
+                    <img src="./images/carInThePits.webp" alt="williams f1 car in the pits">
+                    <div class="readingTime">
+                        <p>Published on <br> 26 Nov 2023</p>
+                        <p>Est. reading time <br> 5 Min</p>
+                    </div>
+                    <h2>Not the result we hoped for, but our hard efforts throughout the season ensure we hold on to P7
+                        in the Constructors' Championship</h2>
+                    <hr>
+                </section>
+            </div>
+        </div>
+
+    </header>
+    <nav class="mobile-nav">
+        <a href="#">F1</a>
+        <a href="#">Gaming</a>
+        <a href="#">News</a>
+        <a href="#">Videos</a>
+        <a href="#">HQ</a>
+        <a href="#">Store</a>
+        <a href="#">Experience Centre</a>
+        <a href="#">Paddock Club Tickets</a>
+    </nav>
+
+    <div class="shopping-cart">
+        <div class="donkerBlauw">
+            <hr>
+            <button class="kruis">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4Z"
+                        fill="#FDFDFE"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="empty">
+            <h2>Your Cart is Empty!</h2>
+            <p>Start shopping below</p>
+        </div>
+        <div class="jasje">
+            <img src="./images/performanceJacket.webp" alt="2023 Men's Performance Jacket">
+            <div class="jasInfo">
+                <h4>2023 Men's Performance Jacket</h4>
+                <h5 id="jasPrijs">€ 151,76</h5>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <article class="textOne">
+            <p>We have secured our best Constructors’ Championship result for six years, despite not having the race we
+                were quite hoping for at the season-ending Abu Dhabi Grand Prix.</p>
+            <p>Both Alex Albon and Logan Sargeant had a clean getaway, but our Thai racer had slipped to P17 by the end
+                of the final tour.</p>
+            <p>Our duo had made their first stops by the end of Lap 16, switching for the medium to hard compound and
+                were now running P19 and P20, setting their sights up the order.</p>
+            <p>Albono sent it around the outside of Zhou Guanyu at T9 on Lap 27 to climb to P17 as other drivers began
+                their second round of pit stops.</p>
+            <p>The AlphaTauri of Daniel Ricciardo had been forced into a very early stop, so after making his second
+                visit to pit lane, found himself behind Logan.</p>
+            <p>Our American racer put up an astute defence on the Australian, keeping him behind for three laps and
+                hampering his progress back through the field.</p>
+        </article>
+
+        <article class="winActie">
+            <div class="recapInhoud">
+                <img src="./images/rsvp.webp" alt="James Vowles' live season recap">
+                <div class="winText">
+                    <h4>James Vowles' live Season Recap</h4>
+                    <p>You can have the chance to be in a virtual audience when our Team Princliple reflects on the 2023
+                        season</p>
+                    <button>RSVP Here</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="textOne">
+            <p>By the 44th lap, both of our drivers had been serviced for a second time, once again bolting on the hard
+                tyres, and returned to running in P17 and P20.</p>
+            <p>Three laps later, Alex completed another lovely move on Zhou before Logan passed Kevin Magnussen on the
+                very next tour.</p>
+            <p>Our pair kept climbing, with our No23 sending it past Nico Hulkenberg on Lap 50 before Sarge overtook
+                Valtteri Bottas on Lap 51.</p>
+            <p>Carlos Sainz made his mandatory stop with two laps and Logan gained another spot, displacing Zhou for P16
+                whilst Alex crossed the line in P14.</p>
+            <p>With both cars out of the points, we were largely powerless to stop AlphaTauri from picking up points.
+                Yuki Tsunoda ultimately came home in P8, with Ricciardo out of the points by 0.5s thanks in part to
+                Logan’s earlier defensive effort.</p>
+            <p>All this meant Williams Racing secured P7 in the Constructors’ Championship, with a three-point margin to
+                P8 – Just 97 days until we get to do it all over again…</p>
+
+            <img src="./images/posterPosition.webp" alt="P7 is secured">
+            <p id="secured">P7 = Secured!</p>
+
+            <p>“My race was okay; I don’t think it was the best following a bad start, but we seemed to recover for the
+                second and third stint,” Alex shared after the chequered flag.</p>
+            <p>“Unfortunately, Yuki [Tsunoda] was too fast for us to have any involvement in his race, however, it’s
+                been the hard work across the year that’s allowed us to seal P7 in the Constructors’ Championship.</p>
+            <p>“Congratulations to the team, including everyone at track and back at the factory. Looking at the
+                progress we’ve made, it’s a great achievement. I’m also very proud of my performance, so I’ll give
+                myself credit for what has been my strongest year in Formula 1.</p>
+            <p>“The connection I have with the team has allowed us to execute the season well, even when we’ve been
+                fighting race after race to hold our positions.</p>
+            <p>“Looking to next year, we’ve got a challenge ahead of us but I’m already excited for what’s to come.”
+            </p>
+        </article>
+
+        <section>
+            <div class="kortingKleding">
+                <h2>Use code BFSALE40 for 40% off!</h2>
+                <div id="seeMoreTwo">
+                    <p>See More</p>
+                    <svg width="20" height="20" viewBox="0 0 24 24">
+                        <polygon fill="#00A3E0" points="1.88 0 0 1.88 6.107 8 0 14.12 1.88 16 9.88 8"
+                            transform="translate(8.06 4)"></polygon>
+                    </svg>
+                </div>
+            </div>
+            <div class="carousel">
+                <div class="saleShop">
+                    <a href="#">
+                        <img src="./images/performanceJacket.webp" alt="2023 Men's Performance Jacket">
+                        <h4>2023 Men's Performance Jacket</h4>
+                    </a>
+                    <div class="kopen">
+                        <p>€ 151,76</p>
+                        <button class="heart">♥</button>
+                    </div>
+                </div>
+
+                <div class="saleShop">
+                    <a href="#">
+                        <img src="./images/kidsJacket.webp" alt="2023 Kids' Off Track Thermal Jacket">
+                        <h4>2023 Kids' Off Track Thermal Jacket</h4>
+                    </a>
+                    <div class="kopen">
+                        <p>€ 62,29</p>
+                        <button class="heart">♥</button>
+                    </div>
+                </div>
+
+                <div class="saleShop">
+                    <a href="#">
+                        <img src="./images/kidsJersey.webp" alt="2023Kids' Training Jersey">
+                        <h4>2023 Kids' Training Jersey</h4>
+                    </a>
+                    <div class="kopen">
+                        <p>€ 38,51</p>
+                        <button class="heart">♥</button>
+                    </div>
+                </div>
+
+
+                <div class="saleShop">
+                    <a href="#">
+                        <img src="./images/mensPolo.webp" alt="2023 Men's CVC Media Polo Navy">
+                        <h4>2023 Men's CVC Media Polo Navy</h4>
+                    </a>
+                    <div class="kopen">
+                        <p>€ 56,63</p>
+                        <button class="heart">♥</button>
+                    </div>
+                </div>
+
+
+                <div class="saleShop">
+                    <a href="#">
+                        <img src="./images/presentationTee.webp" alt="2023 Men's Presentation Tee White">
+                        <h4>2023 Men's Presentation Tee White</h4>
+                    </a>
+                    <div class="kopen">
+                        <p>€ 47,57</p>
+                        <button class="heart">♥</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article class="textOne">
+            <p>Logan continued our reaction from the Yas Marina Circuit by saying: “Firstly, congratulations to the
+                entire team at track and back at Grove for claiming P7 in the Constructors’ Championship.</p>
+            <p>“Everyone has worked incredibly hard all year round to earn this achievement.</p>
+            <p>“I was unfortunate not to get a position or two off the start. Other than that, we missed a bit of pace.
+            </p>
+            <p>“Purposely we didn’t optimise strategy to try and hold back Daniel [Ricciardo] as long as we could.</p>
+            <p>“I was proud of the defence I put up against him for a few laps to contribute to helping the team today.
+            </p>
+            <p>“I enjoyed the end on fresh Hard tyres, coming back through the field doing Quali lap after Quali lap.
+            </p>
+            <p>“From a personal point of view, it’s been another strong weekend. Obviously yesterday was unfortunate
+                with the track limits but once again I’ve had the pace of what the car was capable of and I’m proud of
+                that.</p>
+            <p>“There’s been tough times and good times during my rookie season. This back half of this season I’ve
+                really found some momentum.</p>
+            <p>“My race pace has been on a very upward trajectory and Qualifying pace is starting to come together.</p>
+            <p>“I’m proud of the resilience I’ve had all year, I’ve never given in. I kept pushing and improving and I
+                couldn’t have spent this season with a better group of people.”</p>
+        </article>
+
+        <section>
+            <div class="kortingKleding">
+                <h2>Use code BFSALE40 for 40% off!</h2>
+                <div class="seeMoreTwo">
+                    <p>See More</p>
+                    <svg width="20" height="20" viewBox="0 0 24 24">
+                        <polygon fill="#00A3E0" points="1.88 0 0 1.88 6.107 8 0 14.12 1.88 16 9.88 8"
+                            transform="translate(8.06 4)"></polygon>
+                    </svg>
+                </div>
+            </div>
+            <div class="carousel">
+                <div class="saleShop">
+                    <a href="#">
+                        <img src="./images/loganShirt.webp" alt="Williams Racing Logan Sargeant T-Shirt">
+                        <h4>Williams Racing Logan Sargeant T-Shirt</h4>
+                    </a>
+                    <div class="kopen">
+                        <p>€ 33,98</p>
+                        <button class="heart">♥</button>
+                    </div>
+                </div>
+
+                <div class="saleShop">
+                    <a href="#">
+                        <img src="./images/loganCap.webp" alt="Williams Racing Logan Sargeant Cap">
+                        <h4>Williams Racing Logan Sargeant Cap</h4>
+                    </a>
+                    <div class="kopen">
+                        <p>€ 33,98</p>
+                        <button class="heart">♥</button>
+                    </div>
+                </div>
+
+                <div class="saleShop">
+                    <a href="#">
+                        <img src="./images/loganDriverCap.webp" alt="2023Kids' Training Jersey">
+                        <h4>2023 Adult Logan Sargeant Driver Cap</h4>
+                    </a>
+                    <div class="kopen">
+                        <p>€ 30,58</p>
+                        <button class="heart">♥</button>
+                    </div>
+                </div>
+
+                <div class="saleShop">
+                    <a href="#">
+                        <img src="./images/2022LoganShirt.webp" alt="2023 Men's CVC Media Polo Navy">
+                        <h4>2022 Logan Sargeant T-Shirt</h4>
+                    </a>
+                    <div class="kopen">
+                        <p>€ 28,31</p>
+                        <button class="heart">♥</button>
+                    </div>
+                </div>
+
+                <div class="saleShop">
+                    <a href="#">
+                        <img src="./images/loganHoodie.webp" alt="2023 Men's Presentation Tee White">
+                        <h4>Williams Racing Logan Sargeant Hoodie</h4>
+                    </a>
+                    <div class="kopen">
+                        <p>€ 71,35</p>
+                        <button class="heart">♥</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article class="textOne">
+            <p>Dave Robson, Head of Vehicle Performance, had his eyes across a variety of screens this evening, and
+                concluded our reaction by stating: “The race was difficult today, especially after Alex suffered a poor
+                start and lost five places immediately.</p>
+            <p>“Fortunately, he was able to recover and complete a strong strategy, showing good pace on the Hard
+                compound.</p>
+            <p>“Logan followed a similar strategy and was able to fight with Daniel [Ricciardo] before pitting and
+                finishing strong with a series of good overtakes.</p>
+            <p>“We weren’t able to race directly with AlphaTauri today but given that we haven’t updated the car since
+                mid-season, the fact that we have kept them at bay over the last eight races is testament to us scoring
+                well when the car was competitive, and we continued to compete during the flyaway events even as they
+                brought upgrades to their car.</p>
+            <p>“It is always difficult to defend a lead and allow yourself to be out developed by rivals, but this was a
+                conscious decision that will reap reward over the coming years.</p>
+            <p>“The fact that we were able to hold 7th place in the Constructors’ Championship is down to the continued
+                hard work and attention to detail from the whole team, both at the track and throughout the entire
+                Company back in Grove.</p>
+            <p>“Today itself was not spectacular but as the culmination of a strong season, it marks a clear upturn in
+                our performance and lays the foundations for the coming years.</p>
+            <p>“We now look forward to the final day of testing on Tuesday. Alex and Logan will share one car with
+                Franco and Zak splitting the day in the other car.</p>
+            <p>“The trackside team will then take a well-earned rest before we complete the preparations for the Bahrain
+                test and the launch of FW46.”</p>
+        </article>
+
+        <section class="blauwVlak">
+            <div class="pitPredictions">
+                <div class="vl"></div>
+                <h4>abu dhabi 2023 <br>pit wall predictions</h4>
+            </div>
+            <h2>the prediction window for this grand prix had now closed.</h2>
+            <button>Pit Wall Hub</button>
+        </section>
+
+        <section class="tags">
+            <h4>Related Tags:</h4>
+            <div class="tagsItems">
+                <button>Williams</button>
+                <button>Abu Dhabi 2023</button>
+                <button>Alex Albon</button>
+                <button>Logan Sargeant</button>
+            </div>
+        </section>
+
+        <a href="#" class="report">
+            <div class="qualiReportImg">
+            </div>
+            <div class="witVlak">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path
+                        d="M16 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.1 0 16 0ZM11 14H4V12H11V14ZM14 10H4V8H14V10ZM14 6H4V4H14V6Z"
+                        fill="#00A3E0"></path>
+                </svg>
+                <h3>Report: Qualifying Complete in 2023</h3>
+                <p>YESTERDAY</p>
+            </div>
+        </a>
+
+        <a href="#" class="report">
+            <div class="comproImg">
+            </div>
+            <div class="witVlak">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path
+                        d="M16 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.1 0 16 0ZM11 14H4V12H11V14ZM14 10H4V8H14V10ZM14 6H4V4H14V6Z"
+                        fill="#00A3E0"></path>
+                </svg>
+                <h3>Report: Compromised</h3>
+                <p>24 NOV 2023</p>
+            </div>
+        </a>
+
+        <a href="#" class="report">
+            <div class="previewImg">
+            </div>
+            <div class="witVlak">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path
+                        d="M16 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.1 0 16 0ZM11 14H4V12H11V14ZM14 10H4V8H14V10ZM14 6H4V4H14V6Z"
+                        fill="#00A3E0"></path>
+                </svg>
+                <h3>Alex, Logan and Zak preview the Abu Dhabi</h3>
+                <p>22 NOV 2023</p>
+            </div>
+        </a>
+    </main>
+    <footer>
+        <article>
+            <section class="dropDown">
+                <div class="clickMe">
+                    <h3>Contact & Media</h3>
+                    <svg width="24" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="m7.91 8.59 4.59 4.58 4.59-4.58L18.5 10l-6 6-6-6 1.41-1.41Z" fill="#FDFDFE"></path>
+                    </svg>
+                </div>
+                <div class="dropdownMenu">
+                    <a href="#">Contact</a>
+                    <a href="#">Media</a>
+                    <a href="#">News from HQ</a>
+                </div>
+
+            </section>
+            <section class="dropDown">
+                <div class="clickMe">
+                    <h3>Corporate</h3>
+                    <svg width="24" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="m7.91 8.59 4.59 4.58 4.59-4.58L18.5 10l-6 6-6-6 1.41-1.41Z" fill="#FDFDFE"></path>
+                    </svg>
+                </div>
+                <div class="dropdownMenu">
+                    <a href="#">Careers</a>
+                    <a href="#">Sustainable Business</a>
+                    <a href="#">Regulatory Disclosures</a>
+                    <a href="#">Dorilton Ventures</a>
+                    <a href="#">Partners</a>
+                </div>
+            </section>
+            <section class="dropDown3">
+                <div class="clickMe">
+                    <h3>Store</h3>
+                    <svg width="24" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="m7.91 8.59 4.59 4.58 4.59-4.58L18.5 10l-6 6-6-6 1.41-1.41Z" fill="#FDFDFE"></path>
+                    </svg>
+                </div>
+                <div class="dropdownMenu">
+                    <a href="#">Help Centre</a>
+                    <a href="#">Shipping and Returns Policy</a>
+                </div>
+            </section>
+            <hr>
+        </article>
+
+        <article class="stayLoop">
+            <h3>Stay in the Loop</h3>
+            <img src="./images/AppStore.svg" alt="Apptore">
+            <img src="./images/GooglePlay.svg" alt="Google Play">
+            <hr>
+        </article>
+        <article>
+            <h3>Store Location</h3>
+            <div class="storeLocation">
+                <img src="./images/nederlandseVlag.png" alt="Dutch Flag">
+                <p>Netherlands (EUR)</p>
+            </div>
+            <hr>
+        </article>
+        <article>
+            <h4>Terms & Conditions</h4>
+            <h4>Privacy Policy</h4>
+            <h4>Cookie Policy</h4>
+            <h4>Cookie Settings</h4>
+        </article>
+        <article class="trademark">
+            <p>© the Williams Group, under licence to Williams IP Holdings LLC</p>
+        </article>
+        <article class="miniText">
+            <p>Williams Grand Prix Engineering Limited is a company registered in England and Wales under company number
+                1297497.<br>
+                Its registered office is at Grove, Wantage, Oxfordshire, OX12 0DQ</p>
+        </article>
+    </footer>
+</body>
+
+</html>

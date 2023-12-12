@@ -1,3 +1,5 @@
+// https://www.w3schools.com/howto/howto_js_countdown.asp
+
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 21, 2024 08:00:00").getTime();
 
@@ -26,3 +28,56 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+
+
+
+const menu_btn = document.querySelector('.hamburger');
+const mobile_menu = document.querySelector('.mobile-nav')
+
+menu_btn.addEventListener('click', function () {
+  menu_btn.classList.toggle('is-active');
+  mobile_menu.classList.toggle('is-active');
+})
+
+
+const mand_btn = document.querySelector('.mand');
+const shopping_cart = document.querySelector('.shopping-cart')
+const kruis_btn = document.querySelector('.kruis');
+
+mand_btn.addEventListener('click', function () {
+  mand_btn.classList.toggle('isActive');
+  shopping_cart.classList.toggle('isActive');
+  kruis_btn.classList.toggle('isActive');
+})
+
+kruis_btn.addEventListener('click', function () {
+  mand_btn.classList.toggle('isActive');
+  shopping_cart.classList.toggle('isActive');
+  kruis_btn.classList.toggle('isActive');
+})
+
+
+var heart_btn = document.querySelector('.heart');
+const empty = document.querySelector('.empty');
+const jasje = document.querySelector('.jasje');
+
+heart_btn.addEventListener('click', function () {
+  heart_btn.classList.toggle('isActive');
+  empty.classList.toggle('isActive');
+  jasje.classList.toggle('isActive');
+})
+
+
+
+var dropKnopjes = document.querySelectorAll('.clickMe');
+
+console.log(dropKnopjes);
+
+dropKnopjes.forEach(function(element) {
+  element.addEventListener('click', function() {
+    element.classList.toggle('drop');
+  });
+})
+

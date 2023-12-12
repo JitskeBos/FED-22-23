@@ -63,6 +63,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Veel links naar nieuwe pagina's zijn (grote) afbeeldingen
     - De brillen die verschillende soorten blindheid nabootsten, maken het niet moeilijker om de website te bekijken
 
+
 </details>
 
 
@@ -73,13 +74,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="./images/landingspagina breakdown.pdf" width="375px" alt="breakdown van de hele landingspagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="./images/race report breakdown.pdf" width="375px" alt="breakdown van de tweede pagina">
 
 </details>
 
@@ -93,64 +91,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+Ik liep heel erg vast op het stylen van de bovenste blauwe navigatie balk. Het lukte mij niet om het logo in het midden te krijgen, en de 2 andere iconen aan de rechterkant.
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - het stylen van de bovenste blauwe balk kan met een grid
+  - door de iconen knoppen te maken, zijn ze makkelijker te gebruiken en goed voor de screenreader
 
 </details>
-
-
-
-
-
-## Voortgang 2 (week 3)
-
-<details>
-  <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
-
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
-</details>
-
-
-
 
 
 ## Toegankelijkheidstest 2/2 (week 4)
@@ -159,8 +107,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+<img src="./images/voor readme/IMG_4757.heic" width="375px" alt="toegankelijkheids blaadje">
+<img src="./images/voor readme/IMG_4758.HEIC.heic" width="375px" alt="toegankelijkheids blaadje">
+<img src="./images/voor readme/IMG_4759.HEIC.heic" width="375px" alt="toegankelijkheids blaadje">
+<img src="./images/voor readme/IMG_4760.HEIC.heic" width="375px" alt="toegankelijkheids blaadje">
+<img src="./images/voor readme/IMG_4761.HEIC.heic" width="375px" alt="toegankelijkheids blaadje">
+<img src="./images/voor readme/IMG_4762.HEIC.HEIC.heic" width="375px" alt="toegankelijkheids blaadje">
 </details>
 
 
@@ -173,26 +126,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+Het lukt mij niet om goed te werken met javascript
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+Het werken met javascript gaat na een beetje hulp van Danny en het internet best wel oke!
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - ik had mijn js bestand niet goed gelinkt waardoor hij maar voor 1 element kon werken
+  -html ziet er verder goed uit!
 
 </details>
 
@@ -210,15 +150,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Het maken van een hamburger menu. Ik heb het nooit eerder gedaan en blijkbaar is het niet zo heel moeilijks als je eenmaal doorhebt hoe het zit met de toggle states in de css
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="./images/hamburger menu.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het togglen van alle andere hartjes knoppen bij de atikelen die te koop worden aangeboden. Ik kan er maar 1 togglen ookal hebben ze allemaal dezelfde class naam en is het een variabele in het js bestand.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Het werken met media queries...
+
+  <img src="./images/toggle lukt niet.png" width="375px" alt="bummer">
 </details>
 
 
@@ -230,12 +172,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Pixels naar Em converter https://www.w3schools.com/tags/ref_pxtoemconversion.asp
+  2. Alternatieven voor div https://medium.com/@zac_heisey/7-alternatives-to-the-div-html-tag-7c888c7b5036
+  3. Grid hulp https://css-tricks.com/snippets/css/complete-guide-grid/
+  4. Text wrapping en breaking https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_text/Wrapping_breaking_text
+  5. Waardes voor white space https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
+  6. Verticale lijn maken https://www.geeksforgeeks.org/how-to-make-a-vertical-line-using-html/
+  7. Hamburger menu https://www.youtube.com/watch?v=OFKBep95lb4&t=867s 
 
 </details>
