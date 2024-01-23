@@ -161,8 +161,22 @@ Het werken met javascript gaat na een beetje hulp van Danny en het internet best
   Het werken met media queries...
 
   <img src="./images/toggle lukt niet.png" width="375px" alt="bummer">
-</details>
 
+
+  ### Wat er aangepast moet worden voor de herkansing:
+  - Responsive maken
+  - CSS inkorten
+    - Dubbele CSS selectoren
+  - Lettertype zichtbaar maken
+    - file type aanpassen
+  - Toegankelijks test
+    - file type aanpassen
+  - List items waar mogelijk
+  - Div gebruik verminderen waar mogelijk
+  - Consitentie in eenheden in CSS
+  - Custom Properties
+
+</details>
 
 
 

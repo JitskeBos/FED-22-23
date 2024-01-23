@@ -23,54 +23,23 @@
     src: url(./styles/fonts/Roboto/Roboto-Bold.ttf);
 }
 
-@media (min-width: 670px) {
-
-    .oneRoundToGO {
-        width: 50%;
-        background: none;
-
-    }
-
-    .blackFriday {
-        height: 50em;
-        width: 100%;
-        margin-left: auto;
-        margin-right: 12px;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .headerTwo {
-        height: 30em;
-        display: flex;
-        align-items: center;
-        margin: 12px;
-        background-image: linear-gradient(90deg, rgba(4, 30, 66, 0.97) 25%, rgba(0, 0, 0, 0.00) 100%), url(https://cdn.williamsf1.tech/images/fnx611yr/production/061a4fd413cb48fba786d69f661845842820fdcd-2880x1212.jpg?w=1920&amp;auto=format);
-        background-position: center;
-        background-size: cover;
-    }
-}
-
-@media (min-width: 700px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-}
-
-
 :root {
     --blue: rgba(0, 163, 224, 1.00);
     --red: rgba(209, 45, 74, 1.00);
     --wit: rgba(253, 253, 254, 1.00);
     --grijs: rgba(130, 130, 130, 1.00);
     --navy: rgba(4, 30, 66, 1.00);
-}
 
-img {
-    max-width: 100%;
-}
+    --space-small: 2em;
+    --space-medium: 4em;
+    --space-large: 6em;
 
+    --grid: grid;
+
+    --border-line: 10px solid rgba(0, 163, 224, 0.10);
+
+    --font-size-headline: 16em;
+}
 
 body {
     margin: 0;
@@ -85,23 +54,22 @@ a:visited {
     color: black;
 }
 
-
-
-.topPart {
+.topPart,
+.topPartII {
     background-color: var(--blue);
     height: 3.75em;
     width: 100%;
-
     z-index: 3;
     padding: 0;
-
-    display: grid;
+    display: var(--grid);
     grid-template-columns: 1fr 1fr 1fr;
-
     position: fixed;
     top: 0;
 }
 
+.topPartII {
+    display: none;
+}
 
 #logo {
     grid-column: 2 / 3;
@@ -109,14 +77,78 @@ a:visited {
     align-self: center;
 }
 
-nav {
-    grid-column: 3 / 4;
+@media (min-width: 1200px) {
+    .topPartII {
+        background-color: var(--wit);
+        display: grid;
+        grid-template-columns: 16.5em 1fr 17em;
+        height: auto;
+        box-shadow: 0px 3px 4px rgba(18, 19, 19, 0.08);
+    }
 
+    #logoII {
+        height: 1em;
+        align-self: center;
+        padding: 2em;
+    }
+
+    .rechts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: 3 / 3;
+        background-color: var(--navy);
+    }
+
+    .rechts p {
+        font-family: roboto;
+        font-size: 12px;
+        color: var(--wit);
+        margin-left: 1em;
+    }
+
+    #profiel {
+        border: 10px solid rgba(0, 163, 224, 0.10);
+    }
+
+    #rondje,
+    #profiel {
+        border-radius: 100%;
+        height: 2em;
+        margin-left: 1em;
+    }
+
+    #rondje {
+        background-color: var(--blue);
+    }
+
+    .desktop-nav {
+        display: flex;
+        align-self: center;
+    }
+
+    .desktop-nav li {
+        list-style-type: none;
+        margin-right: 1.5em;
+        font-family: robotoBold;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .desktop-nav a:hover {
+        color: var(--blue);
+    }
+
+    .mand {
+        margin-left: 5em;
+    }
+}
+
+nav {
     display: grid;
     height: 3.75em;
     grid-auto-flow: column;
     grid-auto-columns: 50%;
-    overflow-x: none;
     justify-self: end;
     margin-right: 1em;
     align-items: center;
@@ -134,12 +166,10 @@ nav button {
     display: block;
     width: 30px;
     cursor: pointer;
-
     appearance: none;
     background: none;
     outline: none;
     border: none;
-
 }
 
 .hamburger .bar,
@@ -152,7 +182,6 @@ nav button {
     background-color: white;
     margin: 3px 0px;
     transition: 0.4s;
-
 }
 
 .hamburger.is-active:before {
@@ -174,10 +203,8 @@ nav button {
     width: 100%;
     min-height: 100vh;
     display: block;
-
     background-color: var(--navy);
     padding-top: 5em;
-
 }
 
 .mobile-nav.is-active {
@@ -196,14 +223,11 @@ nav button {
     font-family: neutrafaceBold;
 }
 
-
-
 .mand {
     position: relative;
     display: block;
     width: 30px;
     cursor: pointer;
-
     appearance: none;
     background: none;
     outline: none;
@@ -223,7 +247,6 @@ nav button {
     padding-top: 5em;
     transition: 0.4s;
     z-index: 98;
-
 }
 
 .shopping-cart.isActive {
@@ -254,11 +277,10 @@ nav button {
 .donkerBlauw {
     background-color: var(--navy);
     height: 100%;
-    padding-top: 5em;
+    padding-top: var(--space-medium);
     margin-top: -5em;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
-
 }
 
 .donkerBlauw hr {
@@ -269,15 +291,12 @@ nav button {
     margin-top: -4em;
 }
 
-
 .kruis {
     position: absolute;
     right: 1em;
     top: 1em;
-
     display: block;
     cursor: pointer;
-
     appearance: none;
     background: none;
     outline: none;
@@ -291,14 +310,11 @@ nav button {
     color: var(--wit);
     background-image: linear-gradient(rgb(4, 30, 66), rgb(0, 98, 134) 100%);
     gap: .01em;
-
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 52px;
-
     box-shadow: 0px 3px 6px rgba(18, 19, 19, 0.20);
-
     text-transform: uppercase;
     font-size: .75em;
     margin-top: 5em;
@@ -311,19 +327,22 @@ nav button {
     font-family: tommyBold;
 }
 
+
+@media (min-width: 1200px) {
+    .next-race {
+        margin-top: 6.5em;
+    }
+
+}
+
 /* P:7 secured! */
 
 .oneRoundToGO {
     color: var(--wit);
-
     height: 100%;
-    /* width: 1fr; */
     background-image: linear-gradient(90deg, rgba(4, 30, 66, 0.97) 25%, rgba(0, 0, 0, 0.00) 100%), url(https://cdn.williamsf1.tech/images/fnx611yr/production/061a4fd413cb48fba786d69f661845842820fdcd-2880x1212.jpg?w=1920&amp;auto=format);
     background-position: center;
     background-size: cover;
-
-    margin: 12px;
-    border-radius: 8px;
 }
 
 .oneRoundToGO hr {
@@ -342,7 +361,6 @@ nav button {
     font-size: 25px;
     font-family: tommyBold;
     font-weight: bold;
-
     font-size: 32px;
     width: 7em;
     text-transform: uppercase;
@@ -357,54 +375,40 @@ nav button {
 
 .fanText button {
     height: 45px;
-    padding: 16px;
+    padding: 15px;
     color: var(--wit);
     background-color: transparent;
     border: 1px solid var(--blue);
     font-weight: bold;
-
 }
 
 /* black friday */
 
 .blackFriday {
-
     display: grid;
     grid-template-rows: 5em 1fr;
-
     height: 100%;
-    /* width: 1fr; */
-
     margin: 12px;
     border-radius: 8px;
     min-height: 200px;
-
 }
 
 .fortyProcent {
     background-image: url(./images/40%off.jpeg);
     background-size: cover;
     background-position-y: -1.3em;
-
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     height: 100%;
     width: 100%;
-
-
 }
 
 .getOff {
     background-color: var(--wit);
-
-
     padding-bottom: 12px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
-
-
-
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
 
@@ -425,11 +429,31 @@ nav button {
     text-transform: uppercase;
 }
 
+@media (min-width: 880px) {
+    .headerTwo {
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(90deg, rgba(4, 30, 66, 0.97) 25%, rgba(0, 0, 0, 0.00) 100%), url(https://cdn.williamsf1.tech/images/fnx611yr/production/061a4fd413cb48fba786d69f661845842820fdcd-2880x1212.jpg?w=1920&amp;auto=format);
+    }
 
+    .oneRoundToGO {
+        width: 50%;
+        background-image: none;
+    }
 
+    .fanText {
+        margin-left: 2em;
+    }
 
+    .fanText h1 {
+        font-size: 68px;
+    }
 
-
+    .blackFriday {
+        margin-left: auto;
+        margin-right: 5em;
+    }
+}
 
 /* latest news */
 
@@ -438,11 +462,11 @@ nav button {
     background-size: cover;
     height: 100%;
     width: 100%;
-
     padding-bottom: 3em;
 }
 
 .latest h2 {
+
     color: var(--wit);
     font-size: 32px;
     font-family: neutrafaceBold;
@@ -459,24 +483,12 @@ nav button {
 
 .james {
     color: var(--wit);
-
     height: 100%;
-    /* width: 1fr; */
-
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00), rgba(4, 30, 66, 0.70) 82.8%), url(./images/james\ Hunt.webp);
     background-size: cover;
     background-position: 50%;
-
-
     margin: 12px;
     border-radius: 8px;
-
-
-}
-
-.james img {
-    height: 100%;
-    width: 100%;
 }
 
 .jamesQuote {
@@ -484,22 +496,18 @@ nav button {
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
-
 }
 
 .jamesQuote h2 {
     font-size: 32px;
     font-family: tommyBold;
     font-weight: bolder;
-
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-
     overflow-wrap: break-word;
     text-overflow: ellipsis;
-
     margin-top: 12px;
 }
 
@@ -509,189 +517,128 @@ nav button {
     color: var(--wit);
 }
 
+
 /* Report van de race */
 
-.report {
-
+.pseven {
     height: 8.75em;
-    /* width: 1fr; */
-
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     margin: 12px;
-
 }
 
 .reportImg {
-    grid-column-start: 1;
-    grid-column-end: 2;
-
     background-image: url(./images/carInPits.webp);
     background-size: cover;
-    background-position: center;
-
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
 }
-
-.witVlak {
-    grid-column-start: 2;
-    grid-column-end: 3;
-
-    background-color: var(--wit);
-
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-
-    padding: 15px;
-
-}
-
-.witVlak h3 {
-    font-size: 18px;
-    font-family: neutrafaceBold;
-    font-weight: lighter;
-    color: var(--navy);
-
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    overflow-wrap: break-word;
-    text-overflow: ellipsis;
-}
-
-.witVlak p {
-    font-family: azeretLight;
-    font-size: 10px;
-    color: var(--grijs);
-    text-transform: uppercase;
-
-
-}
-
 
 
 /* Pitcrew video */
 
-.pitCrew {
+.pitCrew,
+.untapped,
+.bts,
+.jamesVideo {
     height: 8.75em;
-    /* width: 1fr; */
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(4, 30, 66, 0.7) 82.8%), url(./images/pitMember.webp);
     background-size: cover;
     background-position: center;
-
-
     margin: 0.7500em;
     border-radius: 8px;
-
     color: var(--wit);
 }
 
-.pitCrew h3 {
+.pitCrew h3,
+.untapped h3,
+.gaKijken h3,
+.jamesVideo h3 {
     font-size: 18px;
     font-family: neutrafaceBold;
-
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
-
     overflow-wrap: break-word;
     text-overflow: ellipsis;
 }
 
-.pitCrew p {
+.pitCrew p,
+.potential p,
+.gaKijken p,
+.jamesVideo p {
     font-family: azeretLight;
     font-size: 10px;
     color: var(--wit);
 }
 
-.nuKijken {
+.nuKijken,
+.potential,
+.gaKijken,
+.jamesVideoText {
     padding: 15px;
 }
 
-/* Untapped Alex */
+.jamesVideo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(4, 30, 66, 0.7) 82.8%), url(./images/James\ Hugging.webp);
+}
+
+.pitCrew {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(4, 30, 66, 0.7) 82.8%), url(./images/pitMember.webp);
+}
 
 .untapped {
-    height: 8.75em;
-    /* width: 1fr; */
-
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(4, 30, 66, 0.7) 82.8%), url(./images/untapped\ potential.webp);
-    background-size: cover;
-    background-position: center;
-
-
-    margin: 0.7500em;
-    border-radius: 8px;
-
-    color: var(--wit);
 }
-
-.untapped h3 {
-    font-size: 18px;
-    font-family: neutrafaceBold;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    /* inline-size: 1fr; */
-    overflow-wrap: break-word;
-    text-overflow: ellipsis;
-}
-
-.potential p {
-    font-family: azeretLight;
-    font-size: 10px;
-    color: var(--wit);
-}
-
-.potential {
-    padding: 15px;
-}
-
-/* behind the scenes */
 
 .bts {
-    height: 8.75em;
-    /* width: 1fr; */
-
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(4, 30, 66, 0.7) 82.8%), url(./images/behind\ the\ scenes.webp);
-    background-size: cover;
-    background-position: center;
-
-
-    margin: 0.7500em;
-    border-radius: 8px;
-
-    color: var(--wit);
 }
 
-.gaKijken h3 {
-    font-size: 18px;
-    font-family: neutrafaceBold;
+@media (min-width: 800px) {
+    .latest h2 {
+        margin-top: -1em;
+    }
 
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    /* inline-size: 1fr; */
-    overflow-wrap: break-word;
-    text-overflow: ellipsis;
-}
+    .articles {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    }
 
-.gaKijken p {
-    font-family: azeretLight;
-    font-size: 10px;
-    color: var(--wit);
-}
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 1em;
+    }
 
-.gaKijken {
-    padding: 15px;
+    #witnormaal {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: var(--wit);
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 15px;
+    }
+    
+    #witnormaal h3 {
+        font-size: 18px;
+        font-family: neutrafaceBold;
+        font-weight: lighter;
+        color: var(--navy);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        overflow-wrap: break-word;
+        text-overflow: ellipsis;
+    }
+    
+    #witnormaal p {
+        font-family: azeretLight;
+        font-size: 10px;
+        color: var(--grijs);
+        text-transform: uppercase;
+        position: absolute;
+        margin-bottom: 1em;
+    }
 }
 
 /* Fan appreciation */
@@ -701,28 +648,18 @@ nav button {
     font-family: neutrafaceBold;
     padding-left: 12px;
     color: var(--navy);
-
 }
 
 .meeting {
-
     height: 18.75em;
-    /* width: 1fr; */
     margin: 1em;
-
-
     background-image: linear-gradient(rgba(4, 30, 66, 0.50), rgba(4, 30, 66, 0.50)), url(./images/meetingFans.webp);
-
     background-size: cover;
-
     margin-bottom: 1.5em;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     border: .25em solid var(--blue);
-
 }
 
 .meeting h2 {
@@ -745,85 +682,54 @@ nav button {
 .swiping {
     overflow: auto;
     white-space: nowrap;
-
     height: 25em;
-
     margin-left: 12px;
     margin-right: 12px;
-
-
     overflow-y: hidden;
     padding-bottom: 2em;
 }
 
-
-.shopForty {
+.shopForty,
+.miniHelmet {
     height: 20em;
     margin: 1em;
-
-
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00), rgba(4, 30, 66, 0.70) 82.8%), url(./images/40%off.jpeg);
     background-size: cover;
     background-position-x: center;
-
-
     margin-bottom: 1.5em;
-
-
     display: inline-block;
-
     width: 90%;
     height: 100%;
-
-
     position: relative;
-
-
-
 }
 
-.shopForty button {
+.shopForty button,
+.miniHelmet button {
     height: 45px;
     padding: 16px;
     color: var(--wit);
     background-color: rgba(4, 30, 66, 0.90);
     border: 1px solid var(--blue);
     font-weight: bold;
+}
 
+.shopForty button {
     margin: 1em;
-
     position: absolute;
     bottom: 0em;
+}
 
+.shopForty {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00), rgba(4, 30, 66, 0.70) 82.8%), url(./images/40%off.jpeg);
 }
 
 .miniHelmet {
-    height: 20em;
-    margin: 1em;
-
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00), rgba(4, 30, 66, 0.70) 82.8%), url(./images/miniHelmet.webp);
-
-    background-size: cover;
-
-    margin-bottom: 1.5em;
-
-    position: relative;
-
-
-    display: inline-block;
-
-    width: 90%;
-    height: 100%;
-
-
-
 }
 
 #helmetText {
     margin: 1em;
     position: absolute;
     bottom: 0;
-
 }
 
 .miniHelmet h4 {
@@ -832,18 +738,30 @@ nav button {
     color: var(--wit);
     text-transform: uppercase;
     font-size: 1.25em;
-    line-height: 24px;
     text-wrap: wrap;
 }
 
-.miniHelmet button {
-    height: 45px;
-    padding: 16px;
-    color: var(--wit);
-    background-color: rgba(4, 30, 66, 0.90);
-    border: 1px solid var(--blue);
-    font-weight: bold;
+@media (min-width: 800px) {
+    .swiping {
+        display: flex;
+        height: 35em;
+    }
 
+    .shopForty,
+    .miniHelmet {
+        width: 43em;
+        height: auto;
+    }
+
+    .miniHelmet h4 {
+        font-size: 2em;
+    }
+
+    .shopForty button,
+    .miniHelmet button {
+        padding: 1.5em;
+        height: 60px;
+    }
 }
 
 /* winactie */
@@ -851,7 +769,6 @@ nav button {
 .winActie {
     background-color: var(--wit);
     box-shadow: 0px 0.5px 3px rgba(18, 19, 19, 0.25);
-
     margin: 1em;
     border-radius: 8px;
 }
@@ -870,9 +787,7 @@ nav button {
     text-transform: uppercase;
     font-size: 1em;
     color: var(--navy);
-
     line-height: 1.3125em;
-
     margin-bottom: 0.625em;
 }
 
@@ -908,7 +823,6 @@ nav button {
     font-family: neutrafaceBold;
     text-transform: uppercase;
     font-size: 2em;
-
 }
 
 .videos p {
@@ -917,55 +831,17 @@ nav button {
     font-size: 1em;
 }
 
-.jamesVideo {
-    height: 8.75em;
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(4, 30, 66, 0.7) 82.8%), url(./images/James\ Hugging.webp);
-    background-size: cover;
-    background-position: center;
-
-
-    margin: 0.7500em;
-    border-radius: 8px;
-
-    color: var(--wit);
-}
-
-.jamesVideo h3 {
-    font-size: 1.125em;
-    font-family: neutrafaceBold;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    overflow-wrap: break-word;
-    text-overflow: ellipsis;
-}
-
-.jamesVideo p {
-    font-family: azeretLight;
-    font-size: 10px;
-    color: var(--wit);
-}
-
-.jamesVideoText {
-    padding: 15px;
-}
-
 /* korting Gulf collention */
 
 .korting {
     background-image: url(./images/gulfBackground.webp);
-    background-position: -45em;
-    margin-bottom: -1em;
 }
 
 .korting img {
     width: 100%;
     height: auto;
     min-width: 15em;
+    max-width: 25em;
 
     margin-left: 10em;
     margin-right: 10em;
@@ -974,7 +850,6 @@ nav button {
 #plaatje {
     display: flex;
     justify-content: center;
-
 }
 
 .korting h2 {
@@ -988,22 +863,28 @@ nav button {
     font-family: roboto;
     font-size: 1em;
     margin-bottom: 2em;
-
 }
 
-#kortingText {
+.kortingText {
     margin: 1em;
-
 }
 
-#kortingText button {
+.kortingText button {
     height: 45px;
     padding: 16px;
     color: var(--wit);
     background-color: rgba(4, 30, 66, 0.90);
     border: 1px solid var(--blue);
-
     margin-bottom: 2em;
+}
+
+@media (min-width: 880px) {
+    .korting {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
 }
 
 /* photo galleries */
@@ -1038,111 +919,95 @@ nav button {
 }
 
 /* quali in photos */
-.qualiPhotos {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(4, 30, 66, 0.7) 82.8%), url(./images/qualiPicture.webp);
-    background-size: cover;
-    background-position: center;
-
-
-    margin: 0.7500em;
-    border-radius: 8px;
-
-    color: var(--wit);
-}
-
-.qualiPhotos h3 {
-    font-size: 1.125em;
-    font-family: neutrafaceBold;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    overflow-wrap: break-word;
-    text-overflow: ellipsis;
-}
-
-.qualiPhotos p {
-    font-family: azeretLight;
-    font-size: 10px;
-    color: var(--wit);
-}
-
-.qualiPhotos {
-    padding: 15px;
-}
-
-/* quali in photos */
-.alexLid {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(4, 30, 66, 0.7) 82.8%), url(./images/albonLid.webp);
-    background-size: cover;
-    background-position: center;
-
-
-    margin: 0.7500em;
-    border-radius: 8px;
-
-    color: var(--wit);
-}
-
-.alexLid h3 {
-    font-size: 1.125em;
-    font-family: neutrafaceBold;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    overflow-wrap: break-word;
-    text-overflow: ellipsis;
-}
-
-.alexLid p {
-    font-family: azeretLight;
-    font-size: 10px;
-    color: var(--wit);
-}
-
-.alexLid {
-    padding: 15px;
-}
-
-/* fans to race with us */
+.qualiPhotos,
+.alexLid,
 .fansToRace {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(4, 30, 66, 0.7) 82.8%), url(./images/fansToRace.webp);
     background-size: cover;
     background-position: center;
-
-
     margin: 0.7500em;
     border-radius: 8px;
-
     color: var(--wit);
-    padding-bottom: 48px;
 }
 
+.qualiPhotos h3,
+.alexLid h3,
 .fansToRace h3 {
     font-size: 1.125em;
     font-family: neutrafaceBold;
-
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
-
     overflow-wrap: break-word;
     text-overflow: ellipsis;
 }
 
+.qualiPhotos p,
+.alexLid p,
 .fansToRace p {
     font-family: azeretLight;
     font-size: 10px;
     color: var(--wit);
 }
 
+.qualiPhotos,
+.alexLid,
 .fansToRace {
     padding: 15px;
+}
+
+.qualiPhotos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(4, 30, 66, 0.7) 82.8%), url(./images/qualiPicture.webp);
+}
+
+.alexLid {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(4, 30, 66, 0.7) 82.8%), url(./images/albonLid.webp);
+}
+
+.fansToRace {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(4, 30, 66, 0.7) 82.8%), url(./images/fansToRace.webp);
+}
+
+@media (min-width: 800px) {
+    .videoRow,
+    .photoRow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: -3em;
+    }
+
+    .videoRow a,
+    .photoRow a {
+        min-width: 10em;
+        max-width: 25em;
+        margin-right: 1em;
+    }
+
+    .jamesVideo,
+    #pitVideo,
+    #untappedVideo {
+        width: 100%;
+        height: 20em;
+    }
+
+    .qualiPhotos,
+    .alexLid,
+    .fansToRace {
+        width: 90%;
+        height: 20em;
+    }
+
+    #untappedVideo {
+        width: 125%;
+    }
+
+    .jamesVideoText,
+    #kijkenText,
+    #potentialText {
+        padding-top: 12em;
+    }
 }
 
 /* race posters */
@@ -1171,197 +1036,59 @@ nav button {
     padding-right: 16px;
 }
 
-
-
 .posterSwipe {
     /* https://css-tricks.com/simple-swipe-with-vanilla-javascript/ */
-
-    /* display: flex;
-    align-items: center; */
-
     overflow: auto;
     white-space: nowrap;
-
     height: 25em;
-
     margin-left: 12px;
     margin-right: 12px;
-
-
     overflow-y: hidden;
-
-
-
-
 }
 
-/* p7 poster */
+.pSevenPoster,
+.abuDhabiPoster,
+.vegasPoster,
+.brazilPoster,
+.mexicoPoster,
+.americasPoster {
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+    position: relative;
+}
+
 .pSevenPoster {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00), rgba(4, 30, 66, 0.70) 100%), url(./images/posterP7.webp);
-    background-size: cover;
-    background-position: center;
-
-    display: inline-block;
-
-    width: 90%;
-    height: 100%;
-
-
-    position: relative;
-
 }
 
-.pSevenPoster button {
-    background-color: var(--blue);
-    border: none;
-    color: var(--wit);
-    font-size: 0.875em;
-    width: 90%;
-    height: 2.8125em;
-    margin: 1em;
-
-    position: absolute;
-    bottom: 0em;
-
-    font-weight: 900;
-}
-
-/* abu Dhabi poster */
 .abuDhabiPoster {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00), rgba(4, 30, 66, 0.70) 100%), url(./images/posterAbuDhabi.webp);
-    background-size: cover;
-    background-position: center;
-
-    display: inline-block;
-
-    width: 90%;
-    height: 100%;
-
-    position: relative;
 }
 
-.abuDhabiPoster button {
-    background-color: var(--blue);
-    border: none;
-    color: var(--wit);
-    font-size: 0.875em;
-    width: 90%;
-    height: 2.8125em;
-    margin: 1em;
-
-    position: absolute;
-    bottom: 0em;
-
-    font-weight: 900;
-}
-
-/* las vegas poster */
 .vegasPoster {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00), rgba(4, 30, 66, 0.70) 100%), url(./images/posterLasVegas.webp);
-    background-size: cover;
-    background-position: center;
-
-    display: inline-block;
-
-
-    width: 90%;
-    height: 100%;
-
-
-    position: relative;
-
 }
 
-.vegasPoster button {
-    background-color: var(--blue);
-    border: none;
-    color: var(--wit);
-    font-size: 0.875em;
-    width: 90%;
-    height: 2.8125em;
-    margin: 1em;
-
-    position: absolute;
-    bottom: 0em;
-
-    font-weight: 900;
-}
-
-/* brazil poster */
 .brazilPoster {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00), rgba(4, 30, 66, 0.70) 100%), url(./images/posterBrazil.webp);
-    background-size: cover;
-    background-position: center;
-
-    display: inline-block;
-
-    width: 90%;
-    height: 100%;
-
-
-    position: relative;
-
 }
 
-.brazilPoster button {
-    background-color: var(--blue);
-    border: none;
-    color: var(--wit);
-    font-size: 0.875em;
-    width: 90%;
-    height: 2.8125em;
-    margin: 1em;
-
-    position: absolute;
-    bottom: 0em;
-
-    font-weight: 900;
-}
-
-/* mexico poster */
 .mexicoPoster {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00), rgba(4, 30, 66, 0.70) 100%), url(./images/posterMexico.webp);
-    background-size: cover;
-    background-position: center;
-
-    display: inline-block;
-    width: 90%;
-    height: 100%;
-
-
-    position: relative;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00), rgba(4, 30, 66, 0.70) 100%), url(./images/posterLasVegas.webp);
 }
 
-.mexicoPoster button {
-    background-color: var(--blue);
-    border: none;
-    color: var(--wit);
-    font-size: 0.875em;
-    width: 90%;
-    height: 2.8125em;
-    margin: 1em;
-
-    position: absolute;
-    bottom: 0em;
-
-    font-weight: 900;
-}
-
-/* americas poster */
 .americasPoster {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00), rgba(4, 30, 66, 0.70) 100%), url(./images/posterAmericas.webp);
-    background-size: cover;
-    background-position: center;
-
-    display: inline-block;
-    width: 90%;
-    height: 100%;
-
-
-    position: relative;
-
 }
 
+.pSevenPoster button,
+.abuDhabiPoster button,
+.vegasPoster button,
+.brazilPoster button,
+.mexicoPoster button,
 .americasPoster button {
     background-color: var(--blue);
     border: none;
@@ -1370,11 +1097,37 @@ nav button {
     width: 90%;
     height: 2.8125em;
     margin: 1em;
-
     position: absolute;
     bottom: 0em;
-
     font-weight: 900;
+}
+
+@media (min-width: 950px) {
+    .posterSwipe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 98%;
+    }
+
+    .pSevenPoster,
+    .abuDhabiPoster,
+    .vegasPoster,
+    .brazilPoster,
+    .mexicoPoster,
+    .americasPoster {
+        margin: .5em;
+    }
+
+    .pSevenPoster button,
+    .abuDhabiPoster button,
+    .vegasPoster button,
+    .brazilPoster button,
+    .mexicoPoster button,
+    .americasPoster button {
+        width: 88%;
+        text-wrap: wrap;
+    }
 }
 
 /* footer */
@@ -1415,9 +1168,7 @@ footer a:visited {
     color: var(--wit);
 }
 
-
 .clickMe {
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1430,21 +1181,21 @@ footer a:visited {
     display: none;
 }
 
-
+.dropdownMenu.isActive {
+    display: block;
+}
 
 .dropdownMenu a {
     color: var(--wit);
     font-family: roboto;
     text-decoration: none;
-    display: block;
+    display: none;
     font-size: 14px;
     margin: 1em;
-
     display: block;
-
 }
 
-.drop+div {
+.dropdownMenu div {
     display: block;
 }
 
@@ -1481,18 +1232,15 @@ footer a:visited {
 .topHeader {
     padding-top: 48px;
     margin: 12px;
-
 }
 
 .breadcrumbs {
     display: flex;
     align-items: center;
-
     font-family: robotoBold;
     font-size: 0.875em;
     margin-bottom: 40px;
     margin-top: 4em;
-
 }
 
 .breadcrumbs svg {
@@ -1504,7 +1252,6 @@ footer a:visited {
     color: var(--wit);
     text-decoration: none;
 }
-
 
 header h1 {
     color: var(--wit);
@@ -1539,7 +1286,6 @@ header img {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 .readingTime p {
@@ -1548,7 +1294,6 @@ header img {
     font-size: 0.875em;
     flex-grow: 0;
     width: 35%;
-
 }
 
 .textOne {
@@ -1572,8 +1317,68 @@ header img {
     margin-top: 24px;
 }
 
+@media (min-width: 800px) {
+
+    .breadcrumbs {
+        margin: 1em;
+        margin-top: 5em;
+        margin-bottom: 2em;
+    }
+
+    .kopjes {
+        margin-left: 1em;
+    }
+
+    .kopjes h1 {
+        margin-top: .25em;
+        font-size: 3em;
+    }
+
+    .kopjes img {
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+    }
+
+    .readingTime {
+        margin-left: 10%;
+        margin-right: 40%;
+        margin-top: 2em;
+        line-height: 2em;
+    }
+
+    .kopjes h2 {
+        margin-left: 10%;
+        width: 55%;
+    }
+
+    .textOne p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .textOne img {
+        margin-left: 10%;
+        width: 80%;
+        height: 100%;
+    }
+}
+
 .recapInhoud {
     padding: 10px;
+}
+
+.recapInhoud h4 {
+    font-family: neutrafaceBold;
+    font-size: 1.1em;
+    color: var(--navy);
+    line-height: 1.3125em;
+    margin-bottom: 0.625em;
+}
+
+.recapInhoud p {
+    font-size: 0.875em;
+    font-family: roboto;
 }
 
 .recapInhoud img {
@@ -1586,25 +1391,62 @@ header img {
     width: 100%;
     background-color: rgb(42, 95, 142);
     color: var(--wit);
-
     font-size: 18px;
     font-weight: 600;
+    border: none;
+}
+
+@media (min-width: 800px) {
+    .textOne {
+        margin-top: 24px;
+    }
+
+    .winActie {
+        width: 42em;
+        height: 100%;
+        margin: auto;
+        margin-bottom: 48px;
+        margin-top: 48px;
+    }
+
+    .recapInhoud {
+        display: grid;
+        grid-template-columns: 20em 1fr;
+        width: 41em;
+        padding: 10px;
+    }
+
+    .recapInhoud h4 {
+        margin: 0;
+    }
+
+    .winText {
+        margin: 1em;
+    }
 }
 
 /* photo galleries */
 
 .kortingKleding {
-    display: grid;
-    grid-template-columns: 1fr 8em;
+    display: flex;
     align-items: center;
     margin: 1em;
     margin-bottom: -1em;
+}
+
+.seeMoreTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 9em;
 }
 
 .kortingKleding h2 {
     font-family: neutrafaceBold;
     font-size: 2em;
     color: var(--navy);
+    margin-right: 1em;
 }
 
 .kortingKleding p {
@@ -1613,14 +1455,14 @@ header img {
     font-size: 1em;
 }
 
-.seeMoreTwo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-}
-
 /* carousel cards */
+
+.carousel {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
 
 .saleShop {
     box-shadow: 0px 0px 8px rgba(4, 30, 66, 0.20);
@@ -1637,10 +1479,8 @@ header img {
     padding-top: 12px;
     line-height: 16px;
     margin: 0;
-
     width: 11em;
     text-wrap: wrap;
-
 }
 
 .saleShop p {
@@ -1653,18 +1493,16 @@ header img {
     margin: 0;
 }
 
-.heart {
+.heart    {
     background-color: lightgray;
     border: none;
     color: var(--grijs);
     font-size: 1em;
     height: 1.5em;
     width: 1.5em;
-    margin-left: 5em;
-
+    margin-left: 45%;
     display: block;
     cursor: pointer;
-
     appearance: none;
     outline: none;
     border: none;
@@ -1720,14 +1558,31 @@ header img {
     align-items: center;
 }
 
-.carousel {
-    display: flex;
+@media (min-width: 900px) {
 
-    overflow: auto;
-    white-space: nowrap;
+    .kortingKleding {
+        display: flex;
+        align-items: center;
+    }
 
-    overflow-y: hidden;
+    .kortingKleding h2 {
+        margin-left: 10%;
+    }
 
+    .carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .saleShop{
+        min-width: 10em;
+        max-width: 25em;
+        margin-right: 1em;
+        margin-left: 1em;
+        word-break: break-word;
+    }
 }
 
 /* pit wall closed */
@@ -1740,17 +1595,25 @@ header img {
     padding-top: 1em;
 }
 
+@media (min-width: 800px) {
+    .blauwVlak {
+        margin-left: 15%;
+        background-position-y: 650px;
+        height: 32em;
+        width: 60em;
+    }
+}
+
 .pitPredictions {
     display: flex;
     align-items: center;
-    margin-left: 30%;
+    margin-left: 40%;
 }
 
 .vl {
     border-left: 2px solid var(--red);
     height: 60px;
     position: absolute;
-
 }
 
 .pitPredictions h4 {
@@ -1763,6 +1626,7 @@ header img {
 .blauwVlak h2 {
     font-family: neutrafaceBold;
     text-transform: uppercase;
+    font-style: italic;
     text-align: center;
     font-size: 40px;
     line-height: 44px;
@@ -1770,7 +1634,7 @@ header img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -.25em;
+    margin-top: 3em;
 }
 
 .blauwVlak button {
@@ -1784,10 +1648,10 @@ header img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 6em;
 }
 
 /* tags */
-
 .tags h4 {
     font-family: neutrafaceBold;
     font-size: 18px;
@@ -1795,7 +1659,6 @@ header img {
     margin-top: 3em;
     color: rgba(4, 30, 66, 1.00);
 }
-
 
 .tagsItems {
     display: flex;
@@ -1807,7 +1670,7 @@ header img {
 
 .tagsItems button {
     background-color: var(--wit);
-    border: .25px solid var(--grijs);
+    border: .25px solid rgb(197, 197, 197);
     padding: .75em;
     font-weight: 600;
     font-size: 1em;
@@ -1815,50 +1678,127 @@ header img {
 }
 
 .tagsItems button:hover {
-    background-color: var(--wit);
     color: var(--blue);
     border: .25px solid var(--blue);
-    padding: .75em;
-    font-weight: 600;
-    font-size: 1em;
-    margin: 12px;
+}
+
+@media (min-width: 800px) {
+    .tags {
+        margin-left: 10%;
+    }
 }
 
 /* Articles on bottom */
 
-
-.qualiReportImg {
-    grid-column-start: 1;
+.qualiReportImg,
+.comproImg,
+.previewImg {
     grid-column-end: 2;
-
-    background-image: url(./images/qualiReport.webp);
     background-size: cover;
     background-position: center;
-
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+}
+
+.qualiReportImg {
+    background-image: url(./images/qualiReport.webp);
 }
 
 .comproImg {
-    grid-column-start: 1;
-    grid-column-end: 2;
-
     background-image: url(./images/compromised.webp);
-    background-size: cover;
-    background-position: center;
-
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
 }
 
 .previewImg {
-    grid-column-start: 1;
-    grid-column-end: 2;
-
     background-image: url(./images/alex&logan.webp);
-    background-size: cover;
-    background-position: center;
+}
 
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+.report {
+    height: 8.75em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1em;
+}
+
+.witVlak, #witnormaal {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: var(--wit);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 15px;
+}
+
+.witVlak h3, #witnormaal h3 {
+    font-size: 18px;
+    font-family: neutrafaceBold;
+    font-weight: lighter;
+    color: var(--navy);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+.witVlak p, #witnormaal p {
+    font-family: azeretLight;
+    font-size: 10px;
+    color: var(--grijs);
+    text-transform: uppercase;
+    position: absolute;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 800px) {
+    .artikelen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .report{
+        grid-template-columns: none;
+        width: 100%;
+        margin-right: 5em;
+        margin-bottom: 10em;
+        margin-top: -1em;
+    }
+
+    .qualiReportImg,
+    .comproImg,
+    .previewImg{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+        height: 12em;
+    }
+
+    .witVlak {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: 6em;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+
+    .witVlak p,
+    #datum {
+        position: absolute;
+        margin-bottom: 1em;
+    }
+
+    #datum {
+        margin-top: -1em;
+    }
+
+    .witVlak svg {
+        margin-bottom: -.5em;
+    }
+
+
+
 }
