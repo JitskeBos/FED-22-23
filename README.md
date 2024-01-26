@@ -75,9 +75,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
   <img src="./images/landingspagina breakdown.pdf" width="375px" alt="breakdown van de hele landingspagina">
+  Helaas niet als png zichtbaar, omdat de afbeelding daar te lang voor is.
 
   ### dynamisch deel (bijv menu): 
   <img src="./images/race report breakdown.pdf" width="375px" alt="breakdown van de tweede pagina">
+    Helaas niet als png zichtbaar, omdat de afbeelding daar te lang voor is.
 
 </details>
 
@@ -108,12 +110,12 @@ Ik liep heel erg vast op het stylen van de bovenste blauwe navigatie balk. Het l
 
   ### Bevindingen
 
-<img src="./images/voor readme/IMG_4757.heic" width="375px" alt="toegankelijkheids blaadje">
-<img src="./images/voor readme/IMG_4758.HEIC.heic" width="375px" alt="toegankelijkheids blaadje">
-<img src="./images/voor readme/IMG_4759.HEIC.heic" width="375px" alt="toegankelijkheids blaadje">
-<img src="./images/voor readme/IMG_4760.HEIC.heic" width="375px" alt="toegankelijkheids blaadje">
-<img src="./images/voor readme/IMG_4761.HEIC.heic" width="375px" alt="toegankelijkheids blaadje">
-<img src="./images/voor readme/IMG_4762.HEIC.HEIC.heic" width="375px" alt="toegankelijkheids blaadje">
+<img src="./images/voor readme/IMG_4757.png" width="375px" alt="toegankelijkheids blaadje">
+<img src="./images/voor readme/IMG_4758.png" width="375px" alt="toegankelijkheids blaadje">
+<img src="./images/voor readme/IMG_4759.png" width="375px" alt="toegankelijkheids blaadje">
+<img src="./images/voor readme/IMG_4760.png" width="375px" alt="toegankelijkheids blaadje">
+<img src="./images/voor readme/IMG_4761.png" width="375px" alt="toegankelijkheids blaadje">
+<img src="./images/voor readme/IMG_4762.png" width="375px" alt="toegankelijkheids blaadje">
 </details>
 
 
@@ -193,5 +195,6 @@ Het werken met javascript gaat na een beetje hulp van Danny en het internet best
   5. Waardes voor white space https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
   6. Verticale lijn maken https://www.geeksforgeeks.org/how-to-make-a-vertical-line-using-html/
   7. Hamburger menu https://www.youtube.com/watch?v=OFKBep95lb4&t=867s 
+  8. Mijn leraar Danny.
 
 </details>
